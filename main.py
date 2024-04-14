@@ -2,9 +2,9 @@ from PyPDF2 import PdfReader
 import pyttsx3
 
 
-# open the pdf file get the given page text.
-reader = PdfReader(r"D:\10_PYTHON PROJECTS\PDF-READER\test2.pdf")
-page = reader.pages[4]
+# open the pdf file to get the given page text.
+reader = PdfReader(r"D:\10_PYTHON PROJECTS\PDF-READER\test.pdf")
+page = reader.pages[0]
 text = page.extract_text()
 
 # read the text.
